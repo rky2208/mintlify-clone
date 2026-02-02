@@ -8,6 +8,7 @@ a {
 }
 
 header {
+  position: fixed;
   width: 100%;
   padding: 0.5rem 0.5rem;
 }
@@ -87,8 +88,124 @@ header {
   display: flex;
   position: relative;
   color: white;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero__section--bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
   background-image: url("./src/assets/svg/bg-dark.svg");
+  top: -6rem;
+  z-index: -1;
+}
+
+.hero__section__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 104px;
+  padding-bottom: 96px;
+}
+
+.hero__section__link {
+  display: flex;
+  border-radius: 999px;
+  color: white;
+  padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+  background-color: #ffffff26;
+  width: max-content;
+  gap: 0.975rem;
+  align-items: center;
+}
+
+.hero__section__link:hover {
+  background-color: #ffffff12;
+}
+
+.chip {
+  background-color: #0c8c5e;
+  border-radius: 999px;
+  padding: 0.125rem 0.5rem;
+}
+
+.next {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.hero__section__content {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__section__content > h1 {
+  line-height: 115%;
+  max-width: 43rem;
+  font-size: 4rem;
+  font-weight: 600;
+  text-wrap: balance;
+}
+
+.hero__section__content > p {
+  font-size: 1.125rem;
+  line-height: 150%;
+  max-width: 29.5rem;
+  text-wrap: pretty;
+}
+
+.hero__section__form {
+  display: flex;
+  border-radius: 999px;
+  background-color: #ffffff26;
+  padding: 0.25rem;
+  backdrop-filter: blur(0.25rem);
+  -webkit-backdrop-filter: blur(0.25rem); /* Safari */
+}
+
+.hero__section__form > input {
+  background: transparent;
+  border: none;
+  padding-inline: 0.725rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.hero__section__form > button {
+  border-radius: 999px;
+  font-size: 0.875rem;
+  padding: 4.5px 12px;
+  color: #08090a;
+  font-weight: 500;
+  border: none;
+}
+
+.hero__section__bottom > img {
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
+  border: 3px solid #ffffff0d;
+  background-color: #08090a;
+}
+
+.customer__section {
+  padding: 144px 32px 72px 32px;
+}
+.customer__section__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px 8px;
+}
+
+.customer__grid__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 64px;
 }
