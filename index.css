@@ -11,6 +11,7 @@ header {
   position: fixed;
   width: 100%;
   padding: 0.5rem 0.5rem;
+  z-index: 1;
 }
 
 .header__container {
@@ -77,11 +78,13 @@ header {
 .header__btn--primary {
   background-color: #ffffff0d;
   color: white;
+  width: max-content;
 }
 
 .header__btn--secondary {
   background-color: white;
   color: #08090a;
+  width: max-content;
 }
 
 .hero__section {
@@ -93,12 +96,15 @@ header {
 }
 
 .hero__section--bg {
-  position: fixed;
+  position: absolute;
   height: 100%;
   width: 100%;
   background-image: url("./src/assets/svg/bg-dark.svg");
   top: -6rem;
   z-index: -1;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero__section__main {
@@ -184,13 +190,17 @@ header {
   color: #08090a;
   font-weight: 500;
   border: none;
+  margin-inline: 16px;
 }
 
 .hero__section__bottom > img {
+  width: 100%;
   border-top-right-radius: 24px;
   border-top-left-radius: 24px;
   border: 3px solid #ffffff0d;
   background-color: #08090a;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 .customer__section {
@@ -208,4 +218,95 @@ header {
   align-items: center;
   width: auto;
   height: 64px;
+}
+
+.feature__section {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.feature__section__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.feature__section__top > h2 {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 40px;
+}
+
+.feature__section__top > p {
+  text-align: center;
+  text-wrap: balance;
+  color: #ffffffb3;
+  max-width: 648px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.feature__section__grid__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "left right"
+    "bottom bottom";
+  gap: 10px;
+}
+.feature__section__grid__container > .left {
+  grid-area: left;
+}
+
+.feature__section__grid__container > .right {
+  grid-area: right;
+}
+
+.feature__section__grid__container > .bottom {
+  grid-area: bottom;
+}
+
+.feature__card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ffffff12;
+  border-radius: 24px;
+}
+
+.feature__card__top {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.feature__card__top-align-center {
+  align-items: center;
+  text-align: center;
+}
+
+.feature__name {
+  line-height: 150%;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #18e299;
+}
+
+.feature__title {
+  font-size: 24px;
+  line-height: 130%;
+}
+
+.feature__description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffffb3;
+  text-wrap: balance;
+}
+.feature__card__bottom > img {
+  width: 100%;
 }
