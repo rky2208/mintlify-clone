@@ -14,7 +14,7 @@
     <header class="header">
       <div class="header__container">
         <div class="header__left">
-          <a href="/" class="header__logo">
+          <a href="#hero-part" class="header__logo">
             <img
               src="./src/assets/svg/mintlify-wordmark.svg"
               alt="Mintlify Logo"
@@ -46,7 +46,7 @@
     </header>
 
     <!-- Section 1: HERO -->
-    <section class="hero">
+    <section class="hero" id="hero-part">
       <div class="hero__bg"></div>
       <div class="hero__container">
         <a href="#" class="hero__announcement">
@@ -178,131 +178,142 @@
 
     <!-- Section 4: Enterprise -->
     <section class="enterprise">
-      <!-- Top Header Section -->
-      <div class="enterprise__header">
-        <div class="enterprise__intro">
-          <h4 class="enterprise__label">Enterprise-reinvention</h4>
-          <h3 class="enterprise__title">
-            Bring intelligence to enterprise knowledge
-          </h3>
-          <p class="enterprise__description">
-            Modernize without the rebuild with enterprise-grade professional
-            service & security.
-          </p>
-        </div>
-        <div class="enterprise__actions">
-          <a href="#" class="btn btn--primary">Explore for enterprise</a>
-        </div>
-      </div>
-
-      <!-- Enterprise Cards -->
-      <div class="enterprise__grid">
-        <article class="e-card">
-          <img
-            src="./src/assets/svg/partnership.svg"
-            class="e-card__icon"
-            alt=""
-          />
-          <h4 class="e-card__title">Build with partnership</h4>
-          <p class="e-card__text">
-            Direct, white-glove access to our documentation experts. Dedicated
-            migration support and guidance tailored to your setup.
-          </p>
-        </article>
-
-        <article class="e-card">
-          <img src="./src/assets/svg/shield.svg" class="e-card__icon" alt="" />
-          <h4 class="e-card__title">Compliance and access control</h4>
-          <p class="e-card__text">
-            Compliant with SOC 2, and in the process for ISO/27001 and GDPR
-            compliance. Secure access with SAML-based SSO.
-          </p>
-        </article>
-      </div>
-
-      <!-- Customer Story Block -->
-      <article class="story">
-        <a href="#" class="story__link">
-          <div class="story__visual">
-            <img
-              src="./src/assets/svg/anthropic.svg"
-              class="story__img"
-              alt="Anthropic"
-            />
-          </div>
-
-          <div class="story__content">
-            <p class="story__tag">Customer story</p>
-            <h3 class="story__headline">
-              See how Anthropic accelerates AI development with Mintlify
+      <div class="enterprise__container">
+        <!-- Top Header Section -->
+        <div class="enterprise__header">
+          <div class="enterprise__intro">
+            <h4 class="enterprise__label">Enterprise-reinvention</h4>
+            <h3 class="enterprise__title">
+              Bring intelligence to enterprise knowledge
             </h3>
-
-            <div class="story__cta">
-              <span>Read story</span>
-              <img
-                src="./src/assets/svg/arrow-down/down-white.svg"
-                class="story__arrow"
-                alt=""
-              />
-            </div>
-
-            <div class="story__stats">
-              <div class="stat">
-                <p class="stat__value">2M+</p>
-                <p class="stat__label">Monthly active developers</p>
-              </div>
-              <div class="stat">
-                <p class="stat__value">3+</p>
-                <p class="stat__label">
-                  Products serviced: Claude API, MCP, and Claude Code
-                </p>
-              </div>
-            </div>
+            <p class="enterprise__description">
+              Modernize without the rebuild with enterprise-grade professional
+              service & security.
+            </p>
           </div>
-        </a>
-      </article>
+          <div class="enterprise__actions">
+            <a href="#" class="btn btn--primary">Explore for enterprise</a>
+          </div>
+        </div>
 
-      <!-- Logo Ticker/Switcher Block -->
-      <div class="client-logos">
-        <ul class="client-logos__list">
-          <li class="client-logos__item">
-            <button class="client-logos__btn client-logos__btn--active">
-              <img src="./src/assets/svg/anthropic-logo.svg" alt="Anthropic" />
-            </button>
-          </li>
-          <li class="client-logos__item">
-            <button class="client-logos__btn">
-              <img src="./src/assets/svg/coinbase.svg" alt="Coinbase" />
-            </button>
-          </li>
-          <li class="user__logo__list__item">
-            <button class="client-logos__btn">
+        <!-- Enterprise Cards -->
+        <div class="enterprise__grid">
+          <article class="e-card">
+            <img
+              src="./src/assets/svg/partnership.svg"
+              class="e-card__icon"
+              alt=""
+            />
+            <h4 class="e-card__title">Build with partnership</h4>
+            <p class="e-card__text">
+              Direct, white-glove access to our documentation experts. Dedicated
+              migration support and guidance tailored to your setup, and
+              elevated support SLAs.
+            </p>
+          </article>
+
+          <article class="e-card">
+            <img
+              src="./src/assets/svg/shield.svg"
+              class="e-card__icon"
+              alt=""
+            />
+            <h4 class="e-card__title">Compliance and access control</h4>
+            <p class="e-card__text">
+              Compliant with SOC 2, and in the process for ISO/27001 and GDPR
+              compliance to meet your internal and external data requirements.
+              Secure access and provisioning with SAML-based SSO.
+            </p>
+          </article>
+        </div>
+
+        <!-- Customer Story Block -->
+        <article class="story">
+          <a href="#" class="story__link">
+            <div class="story__visual">
               <img
-                src="./src/assets/svg/hubspot.svg"
-                alt=""
-                class="low-brighness"
+                src="./src/assets/svg/anthropic.svg"
+                class="story__img"
+                alt="Anthropic"
               />
-            </button>
-          </li>
-          <li class="user__logo__list__item">
-            <button class="client-logos__btn">
-              <img
-                src="./src/assets/svg/zapier.svg"
-                alt=""
-                class="low-brighness"
-              />
-            </button>
-          </li>
-          <li class="user__logo__list__item">
-            <button class="client-logos__btn">
-              <img
-                src="./src/assets/svg/att.svg"
-                alt=""
-                class="low-brighness"
-              />
-            </button>
-          </li>
-        </ul>
+            </div>
+
+            <div class="story__content">
+              <p class="story__tag">Customer story</p>
+              <h3 class="story__headline">
+                See how Anthropic accelerates AI development with Mintlify
+              </h3>
+
+              <div class="story__cta">
+                <span>Read story</span>
+                <img
+                  src="./src/assets/svg/arrow/down-white.svg"
+                  class="story__arrow"
+                  alt=""
+                />
+              </div>
+
+              <div class="story__stats">
+                <div class="stat">
+                  <p class="stat__value">2M+</p>
+                  <p class="stat__label">Monthly active developers</p>
+                </div>
+                <div class="stat">
+                  <p class="stat__value">3+</p>
+                  <p class="stat__label">
+                    Products serviced: Claude API, MCP, and Claude Code
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Logo Ticker/Switcher Block -->
+        <div class="client-logos">
+          <ul class="client-logos__list">
+            <li class="client-logos__item">
+              <button class="client-logos__btn client-logos__btn--active">
+                <img
+                  src="./src/assets/svg/anthropic-logo.svg"
+                  alt="Anthropic"
+                />
+              </button>
+            </li>
+            <li class="client-logos__item">
+              <button class="client-logos__btn grey-scale">
+                <img src="./src/assets/svg/coinbase.svg" alt="Coinbase" />
+              </button>
+            </li>
+            <li class="user__logo__list__item">
+              <button class="client-logos__btn">
+                <img
+                  src="./src/assets/svg/hubspot.svg"
+                  alt=""
+                  class="low-brighness"
+                />
+              </button>
+            </li>
+            <li class="user__logo__list__item">
+              <button class="client-logos__btn">
+                <img
+                  src="./src/assets/svg/zapier.svg"
+                  alt=""
+                  class="low-brighness"
+                />
+              </button>
+            </li>
+            <li class="user__logo__list__item">
+              <button class="client-logos__btn">
+                <img
+                  src="./src/assets/svg/att.svg"
+                  alt=""
+                  class="low-brighness"
+                />
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -334,7 +345,7 @@
                 <div class="story__cta">
                   <span>Read story</span
                   ><img
-                    src="./src/assets/svg/arrow-down/down-grey.svg"
+                    src="./src/assets/svg/arrow/down-grey.svg"
                     class="story__arrow"
                   />
                 </div>
@@ -356,7 +367,7 @@
                 <div class="story__cta">
                   <span>Read story</span
                   ><img
-                    src="./src/assets/svg/arrow-down/down-grey.svg"
+                    src="./src/assets/svg/arrow/down-grey.svg"
                     class="story__arrow"
                   />
                 </div>
@@ -378,7 +389,7 @@
                 <div class="story__cta">
                   <span>Read story</span
                   ><img
-                    src="./src/assets/svg/arrow-down/down-grey.svg"
+                    src="./src/assets/svg/arrow/down-grey.svg"
                     class="story__arrow"
                   />
                 </div>
@@ -400,7 +411,7 @@
                 <div class="story__cta">
                   <span>Read story</span
                   ><img
-                    src="./src/assets/svg/arrow-down/down-grey.svg"
+                    src="./src/assets/svg/arrow/down-grey.svg"
                     class="story__arrow"
                   />
                 </div>
@@ -422,7 +433,7 @@
                 <div class="story__cta">
                   <span>Read story</span
                   ><img
-                    src="./src/assets/svg/arrow-down/down-grey.svg"
+                    src="./src/assets/svg/arrow/down-grey.svg"
                     class="story__arrow"
                   />
                 </div>
@@ -444,7 +455,7 @@
                 <div class="story__cta">
                   <span>Read story</span
                   ><img
-                    src="./src/assets/svg/arrow-down/down-grey.svg"
+                    src="./src/assets/svg/arrow/down-grey.svg"
                     class="story__arrow"
                   />
                 </div>
@@ -466,7 +477,7 @@
                 <div class="story__cta">
                   <span>Read story</span
                   ><img
-                    src="./src/assets/svg/arrow-down/down-grey.svg"
+                    src="./src/assets/svg/arrow/down-grey.svg"
                     class="story__arrow"
                   />
                 </div>
@@ -488,7 +499,7 @@
                 <div class="story__cta">
                   <span>Read story</span
                   ><img
-                    src="./src/assets/svg/arrow-down/down-grey.svg"
+                    src="./src/assets/svg/arrow/down-grey.svg"
                     class="story__arrow"
                   />
                 </div>
@@ -510,7 +521,7 @@
                 <div class="story__cta">
                   <span>Read story</span
                   ><img
-                    src="./src/assets/svg/arrow-down/down-grey.svg"
+                    src="./src/assets/svg/arrow/down-grey.svg"
                     class="story__arrow"
                   />
                 </div>
@@ -532,7 +543,7 @@
                 <div class="story__cta">
                   <span>Read story</span
                   ><img
-                    src="./src/assets/svg/arrow-down/down-grey.svg"
+                    src="./src/assets/svg/arrow/down-grey.svg"
                     class="story__arrow"
                   />
                 </div>
@@ -544,14 +555,301 @@
 
       <div class="reviews__nagivation">
         <button class="btn--navigation btn-disable">
-          <img src="./src/assets/svg/arrow-left.svg" alt="left" />
+          <img src="./src/assets/svg/arrow/left.svg" alt="left" />
         </button>
         <button class="btn--navigation btn-ative">
-          <img src="./src/assets/svg/arrow-right.svg" alt="right" />
+          <img src="./src/assets/svg/arrow/right.svg" alt="right" />
         </button>
       </div>
     </section>
 
-    <footer></footer>
+    <!-- Section: 6 Producti Demo & Pricing -->
+    <section class="subscription">
+      <div class="subscription__header">
+        <h3 class="subscription__title">
+          Make documentation your winning advantage
+        </h3>
+        <p class="subscription__desc">
+          Join the leaders of tomorrow to future proof your documentation today.
+        </p>
+      </div>
+
+      <div class="subscription__actions">
+        <a href="#" class="btn btn--primary">Get started for free</a>
+        <a href="#" class="btn btn--ghost">Get a demo</a>
+      </div>
+
+      <div class="subscription__options">
+        <!-- Pricing Card -->
+        <article class="sub-card">
+          <div class="sub-card__icon-wrap">
+            <img
+              src="./src/assets/svg/plan.svg"
+              class="sub-card__icon"
+              alt=""
+            />
+          </div>
+          <div class="sub-card__body">
+            <h4 class="sub-card__title">Pricing on your terms</h4>
+            <p class="sub-card__text">Pick the plan that works best for you</p>
+          </div>
+          <a href="#" class="sub-card__link story__cta">
+            <span>Pricing Details</span>
+            <img src="./src/assets/svg/arrow/right-green.svg" alt="" />
+          </a>
+        </article>
+
+        <!-- Quickstart Card -->
+        <article class="sub-card">
+          <div class="sub-card__icon-wrap">
+            <img
+              src="./src/assets/svg/book.svg"
+              class="sub-card__icon"
+              alt=""
+            />
+          </div>
+          <div class="sub-card__body">
+            <h4 class="sub-card__title">Start building</h4>
+            <p class="sub-card__text">Deploy your documentation in minutes</p>
+          </div>
+          <a href="#" class="sub-card__link story__cta">
+            <span>Quickstart</span>
+            <img src="./src/assets/svg/arrow/right-green.svg" alt="" />
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Top Row: Logo & Socials -->
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a href="#hero-part" class="footer__logo">
+              <img
+                src="./src/assets/svg/mintlify-wordmark.svg"
+                alt="Mintlify Logo"
+              />
+            </a>
+          </div>
+
+          <div class="footer__socials">
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <img src="./src/assets/svg/socials/linkedin.svg" />
+            </a>
+            <a href="#" class="social-link" aria-label="X">
+              <img src="./src/assets/svg/socials/x.svg" />
+            </a>
+            <a href="#" class="social-link" aria-label="GitHub">
+              <img src="./src/assets/svg/socials/github.svg" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Grid -->
+        <nav class="footer__nav">
+          <div class="footer__nav-col">
+            <h3 class="footer__nav-title">Explore</h3>
+            <ul class="footer__nav-list">
+              <li>
+                <a
+                  href="https://www.mintlify.com/startups"
+                  class="footer__nav-link"
+                  >Startup</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.mintlify.com/enterprise"
+                  class="footer__nav-link"
+                  >Enterprise</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.mintlify.com/switch"
+                  class="footer__nav-link"
+                  >Switch</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.mintlify.com/oss-program"
+                  class="footer__nav-link"
+                  >OSS Program</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <h3 class="footer__nav-title">Resources</h3>
+            <ul class="footer__nav-list">
+              <li>
+                <a
+                  href="https://www.mintlify.com/customers"
+                  class="footer__nav-link"
+                  >Customers</a
+                >
+              </li>
+              <li>
+                <a href="https://www.mintlify.com/blog" class="footer__nav-link"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.mintlify.com/pricing"
+                  class="footer__nav-link"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.mintlify.com/guides"
+                  class="footer__nav-link"
+                  >Guides</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/orgs/mintlify/discussions/categories/feature-requests"
+                  class="footer__nav-link"
+                  >Feature Requests</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <h3 class="footer__nav-title">Documentation</h3>
+            <ul class="footer__nav-list">
+              <li>
+                <a href="https://www.mintlify.com/docs" class="footer__nav-link"
+                  >Getting Started</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.mintlify.com/docs/api-reference"
+                  class="footer__nav-link"
+                  >API Reference</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.mintlify.com/docs/components"
+                  class="footer__nav-link"
+                  >Components</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.mintlify.com/docs/changelog"
+                  class="footer__nav-link"
+                  >Changelog</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <h3 class="footer__nav-title">Company</h3>
+            <ul class="footer__nav-list">
+              <li>
+                <a
+                  href="https://www.mintlify.com/careers"
+                  class="footer__nav-link"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.mintlify.com/wall-of-love"
+                  class="footer__nav-link"
+                  >Wall of Love</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <h3 class="footer__nav-title">Legal</h3>
+            <ul class="footer__nav-list">
+              <li>
+                <a
+                  href="https://www.mintlify.com/legal/privacy"
+                  class="footer__nav-link"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.mintlify.com/security/responsible-disclosure"
+                  class="footer__nav-link"
+                  >Responsible Disclosure</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.mintlify.com/legal/terms"
+                  class="footer__nav-link"
+                  >Terms Of Sevices</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://security.mintlify.com/?_gl=1*hro623*_gcl_au*MTM3MTcyNzI2OS4xNzcwMDI1MDUw"
+                  class="footer__nav-link"
+                  >Security</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://mintlify.typeform.com/to/Bxa77EKc"
+                  class="footer__nav-link"
+                  >DSR/DSAR</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Security & Compliance Section -->
+        <div class="footer__security">
+          <p class="footer__security-text">
+            Backed by enterprise-grade security
+          </p>
+          <div class="footer__badges">
+            <img
+              src="./src/assets/png/security.png"
+              alt="SOC 2"
+              class="footer__badge"
+            />
+          </div>
+        </div>
+
+        <!-- Bottom Row: Status & Copyright -->
+        <div class="footer__bottom">
+          <a href="#" class="footer__status">
+            <img
+              src="./src/assets/svg/health-status.svg"
+              class="img__status-indicator"
+            />
+            <span>All systems normal</span>
+          </a>
+
+          <div class="footer__copyright">© 2026 Mintlify, Inc.</div>
+
+          <div class="footer__theme-switchers">
+            <button class="footer__theme-btn" aria-label="System Mode">
+              <img src="./src/assets/svg/desktop.svg" alt="system" />
+            </button>
+            <button class="footer__theme-btn" aria-label="Light Mode">
+              <img src="./src/assets/svg/sun.svg" alt="light" />
+            </button>
+            <button class="footer__theme-btn dark-mode" aria-label="Dark Mode">
+              <img src="./src/assets/svg/moon.svg" alt="dark" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
