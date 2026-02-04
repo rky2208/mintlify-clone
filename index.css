@@ -545,3 +545,36 @@ header {
 .review-card__content > .story__cta {
   color: #ffffff80;
 }
+
+.reviews__nagivation {
+  display: flex;
+  justify-content: center;
+  padding-top: 48px;
+  gap: 16px;
+}
+
+.btn--navigation {
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-ative {
+  background: white;
+  cursor: pointer;
+}
+
+.btn-ative:hover {
+  opacity: 0.8;
+}
+
+.btn-disable {
+  background: white;
+  opacity: 0.5;
+  cursor: default;
+}
