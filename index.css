@@ -348,8 +348,73 @@ header {
   color: #ffffffb3;
   text-wrap: balance;
 }
+.f-card__visual {
+  height: 320px;
+}
+
 .f-card__visual > img {
   width: 100%;
+  height: 100%;
+}
+
+.f-card__tasks {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.f-card__task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 3.5px solid #ffffff12;
+}
+
+.f-task-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: #18e299;
+  border-radius: 50%;
+}
+
+.f-card__task:last-child {
+  border-style: dashed;
+  border-width: 1px;
+}
+
+.f-card__task:last-child > .f-task-img-wrapper {
+  background-color: transparent;
+}
+
+.f-task-img-wrapper > img {
+  width: 24px;
+  height: 24px;
+}
+
+.loader {
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.task-connector {
+  height: 1px;
+  width: 30px;
+  background-color: #ffffff12;
 }
 
 .f-card--featured {
@@ -435,6 +500,10 @@ header {
 .story {
   display: flex;
   width: 100%;
+}
+
+.story:hover {
+  filter: brightness(0.8);
 }
 
 .story__link {
