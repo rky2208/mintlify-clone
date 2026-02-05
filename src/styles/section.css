@@ -38,7 +38,7 @@
   width: max-content;
   gap: 0.975rem;
   align-items: center;
-  top: 30px;
+  top: 10px;
 }
 
 .hero__announcement:hover {
@@ -70,9 +70,10 @@
 }
 
 .hero__title {
+  letter-spacing: -1.024px;
   line-height: 115%;
   max-width: 43rem;
-  font-size: 4rem;
+  font-size: 51px;
   font-weight: 600;
   text-wrap: balance;
 }

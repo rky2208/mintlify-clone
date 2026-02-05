@@ -69,14 +69,7 @@ No setup needed. Just open `index.html` in your browser.
 
 ## Here is Preview
 
-
-## What's Next
-
-Some ideas I might add later:
-- Mobile responsiveness
-- Dark mode toggle
-- Smooth animations
-- Better accessibility
+![App preview](./src/assets/png/app-preview.png)
 
 ---
 
