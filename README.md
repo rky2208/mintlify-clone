@@ -1,4 +1,3 @@
-```md
 # Mintlify Landing Page Clone
 
 A clean recreation of Mintlify's homepage using just HTML and CSS. No frameworks, no JavaScript—just the basics done well.
@@ -25,6 +24,7 @@ I wanted to practice building real-world layouts without relying on frameworks. 
 - Custom fonts (Inter + Geist Mono)
 
 **File Structure:**
+
 ```
 
 - index.html
@@ -41,6 +41,7 @@ I wanted to practice building real-world layouts without relying on frameworks. 
 ```
 
 I split the CSS into three files to keep things organized:
+
 - `base.css` — global styles and utilities
 - `layout.css` — header, footer, and shared layouts
 - `sections.css` — page-specific sections
@@ -54,6 +55,7 @@ and import into index.css root file for better management and readability
 No setup needed. Just open `index.html` in your browser.
 
 **For a better experience:**
+
 - Use **Live Server** in VS Code
 
 ---
@@ -76,5 +78,3 @@ No setup needed. Just open `index.html` in your browser.
 ## Credits
 
 Design inspired by [Mintlify](https://mintlify.com). Built purely for practice.
-
-```
