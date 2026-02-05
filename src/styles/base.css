@@ -1,0 +1,102 @@
+/* Fonts */
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/InterVariable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("../assets/fonts/GeistMono-Regular.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Globals & Reset */
+body {
+  background-color: #08090a;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Buttons */
+
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.125;
+  border-radius: 999px;
+}
+
+.btn--ghost {
+  border: none;
+  background-color: #ffffff0d;
+  color: white;
+  width: max-content;
+}
+
+.btn--primary {
+  border: none;
+  background-color: white;
+  color: #08090a;
+  width: max-content;
+}
+
+.btn--primary:hover {
+  background-color: #ffffffd9;
+}
+
+/* Utilities */
+
+.loader {
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.grey-scale {
+  filter: grayscale(100%);
+}
+
+.low-brighness {
+  filter: brightness(0.3);
+}
+
+.dark-mode {
+  background-color: black;
+}
