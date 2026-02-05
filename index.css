@@ -1,8 +1,25 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./src/assets/fonts/InterVariable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("./src/assets/fonts/GeistMono-Regular.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   background-color: #08090a;
-  font-family: "inter", "inter Fallback";
   margin: 0;
   scroll-behavior: smooth;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
 }
 h1,
 h2,
@@ -237,6 +254,7 @@ header {
   background-color: #08090a;
   max-width: 1080px;
   margin: 0 auto;
+  border-bottom: none;
 }
 
 .logos {
@@ -262,7 +280,7 @@ header {
   flex-direction: column;
   color: white;
   max-width: 1024px;
-  margin: 0 auto;
+  margin: 0 auto 144px auto;
 }
 
 .features__header {
@@ -299,6 +317,7 @@ header {
   flex-direction: column;
   border: 1px solid #ffffff12;
   border-radius: 24px;
+  margin: 4px;
 }
 
 .f-card__content {
@@ -309,10 +328,12 @@ header {
 }
 
 .f-card__tag {
+  font-size: 12px;
   line-height: 150%;
   font-weight: 500;
   text-transform: uppercase;
   color: #18e299;
+  font-family: "Geist Mono", "Geist Mono Fallback";
 }
 
 .f-card__title {
@@ -369,6 +390,8 @@ header {
   font-weight: 500;
   text-transform: uppercase;
   color: #18e299;
+  font-family: "Geist Mono", "Geist Mono Fallback";
+  font-size: 12px;
 }
 .enterprise__title {
   font-size: 44px;
@@ -405,6 +428,7 @@ header {
 
 .e-card__text {
   font-size: 16px;
+  line-height: 24px;
   color: #ffffffb3;
   text-wrap: pretty;
 }
@@ -446,14 +470,17 @@ header {
   line-height: 18px;
   font-weight: 600;
   text-transform: uppercase;
+  font-family: "Geist Mono", "Geist Mono Fallback";
 }
 
 .story__headline {
-  font-size: 24;
+  font-size: 24px;
   line-height: 1.33;
   max-width: 448px;
   margin-top: 16px;
   font-weight: 500;
+  letter-spacing: -0.24px;
+  text-wrap: balance;
 }
 
 .story__cta {
@@ -598,20 +625,24 @@ header {
   font-weight: 500;
   text-transform: uppercase;
   color: #18e299;
+  font-family: "Geist Mono", "Geist Mono Fallback";
 }
 
 .reviews__title {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 600;
-  line-height: 110%;
+  line-height: 44px;
   color: white;
   text-wrap: balance;
+  letter-spacing: 0.8px;
 }
 .reviews__desc {
   color: #ffffffb3;
   text-wrap: pretty;
   font-size: 16px;
   line-height: 24px;
+  text-align: center;
+  max-width: 640px;
 }
 
 .reviews__list {
@@ -650,6 +681,8 @@ header {
   display: -webkit-box;
   overflow: hidden;
   color: #ffffffb3;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .review-card__content > .story__cta {
@@ -749,6 +782,16 @@ header {
   height: 32px;
 }
 
+.sub-card__title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.sub-card__text {
+  font-size: 16px;
+  line-height: 24px;
+}
 .sub-card__body {
   display: flex;
   flex-direction: column;
@@ -761,6 +804,9 @@ header {
   color: #18e299;
   align-items: center;
   gap: 6px;
+  margin: 0;
+  font-weight: 500;
+  line-height: 22.5px;
 }
 
 .sub-card__link > img {
@@ -819,11 +865,12 @@ header {
   color: #ffffff80;
   font-size: 13px;
   line-height: 150%;
-  font-size: 500;
+  font-weight: 500;
   padding: 6px 12px;
   margin-bottom: 4px;
   text-transform: uppercase;
   text-wrap: balance;
+  letter-spacing: 0.65px;
 }
 
 .footer__nav-list {
